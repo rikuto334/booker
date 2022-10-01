@@ -6,7 +6,8 @@ Rails.application.routes.draw do
 
   resources :books
 
-  patch 'books/:id' => 'books#update', as: 'update_book'
+  # patch 'books/:id' => 'books#update', as: 'update_book'
+  # delete 'books/:id' => 'books#destroy', as: 'destroy_book'
   # get 'homes/top'
   get '/' => 'homes#top'
   # get 'books/:id/edit' => 'books#edit', as: 'edit_list'
